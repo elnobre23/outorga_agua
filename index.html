@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Outorga de Água para Produtor Rural</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo para outorga de água para produtores rurais. Passo a passo por estado, documentos necessários e legislação atualizada.">
+    <meta name="keywords" content="outorga de água, licença hídrica, produtor rural, regularização ambiental, irrigação">
+    <meta name="author" content="Guia de Outorga">
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Guia de Outorga de Água para Produtor Rural">
+    <meta property="og:description" content="Regularize seu uso de água e evite multas - Guia completo por estado">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos customizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc; /* bg-slate-50 */
+            color: #334155; /* slate-700 for better contrast */
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #e2e8f0; }
+        ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+        .active-state {
+            background-color: #e0f2fe !important; /* sky-100 */
+            color: #0369a1 !important; /* sky-700 */
+            font-weight: 600;
+            border-left: 4px solid #0ea5e9; /* sky-500 */
+        }
+        .nav-btn-active {
+            background-color: #0ea5e9; /* sky-500 */
+            color: white;
+        }
+        .prose h2 { font-size: 1.5rem; font-weight: 700; color: #1e293b; }
+        .prose h3 { font-size: 1.25rem; font-weight: 600; color: #1e293b; }
+        .prose h4 { 
+            font-weight: 600; 
+            color: #1e293b; 
+            margin-top: 1.75em; 
+            margin-bottom: 0.75em; 
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .prose ul, .prose ol { margin-left: 0.25rem; padding-left: 1.25rem; }
+        .prose ul > li::marker, .prose ol > li::marker { color: #0ea5e9; }
+        .prose details { background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 0.5rem; }
+        .prose summary { font-weight: 600; cursor: pointer; color: #0369a1; }
+        .prose a { color: #0ea5e9; text-decoration: underline; }
+
+        .checklist { list-style: none; padding-left: 0; }
+        .checklist li { display: flex; align-items: start; gap: 0.75rem; margin-bottom: 0.5rem; }
+        .checklist li svg { flex-shrink: 0; width: 1.25rem; height: 1.25rem; color: #0ea5e9; margin-top: 0.125rem; }
+
+        /* Estilo para placeholders de anúncios */
+        .ad-banner {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- Cabeçalho -->
+        <header class="text-center mb-4">
+            <h1 id="home-btn-header" class="text-3xl md:text-4xl font-bold text-slate-800 cursor-pointer hover:text-sky-600 transition-colors duration-300">Outorga de Água para Produtor Rural: Garanta sua Licença</h1>
+            <p class="mt-3 text-lg text-slate-500 max-w-2xl mx-auto">O guia completo para regularizar o uso da água na sua propriedade e evitar multas.</p>
+        </header>
+
+        <!-- Espaço para Anúncio - Topo -->
+        <div class="ad-banner mt-4 mb-6 text-center p-4 bg-gray-100 border rounded-lg">
+            [ESPAÇO PARA ANÚNCIO]
+        </div>
+
+        <!-- Barra de Navegação Principal -->
+        <nav aria-label="Navegação principal" class="flex justify-center items-center gap-4 mb-4 p-2 bg-slate-100 rounded-lg">
+            <button id="nav-inicio" class="nav-btn px-4 py-2 rounded-md font-semibold transition-colors nav-btn-active">Início</button>
+            <button id="nav-faq" class="nav-btn px-4 py-2 rounded-md font-semibold transition-colors hover:bg-slate-200">Dúvidas Frequentes</button>
+            <button id="nav-artigos" class="nav-btn px-4 py-2 rounded-md font-semibold transition-colors hover:bg-slate-200">Artigos</button>
+        </nav>
+
+        <!-- Breadcrumbs -->
+        <div id="breadcrumb" class="text-sm text-slate-500 mb-8 px-1">
+            <span>Você está em:</span> 
+            <span id="breadcrumb-path">Início</span>
+        </div>
+
+        <div id="main-content-area" class="flex flex-col md:flex-row gap-8">
+            <!-- Barra Lateral (visível apenas na home) -->
+            <aside id="sidebar" class="w-full md:w-1/3 lg:w-1/4">
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-200/80 sticky top-6">
+                    <h2 class="text-lg font-semibold mb-3 px-2 text-slate-800">Navegue por Local</h2>
+                    <div class="relative mb-3">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                            <svg class="w-5 h-5 text-slate-400" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" /></svg>
+                        </span>
+                        <input type="text" id="search-bar" placeholder="Buscar estado..." class="w-full p-2 pl-10 border border-slate-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none transition">
+                    </div>
+                    <ul id="lista-estados" class="space-y-1 max-h-[60vh] overflow-y-auto pr-1">
+                        <!-- A lista de estados será inserida aqui pelo JavaScript -->
+                    </ul>
+                    <!-- Espaço para Anúncio - Barra Lateral -->
+                    <div class="ad-banner mt-8 p-4 bg-gray-100 border rounded-lg">
+                        [ANÚNCIO AQUI]
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Conteúdo Principal -->
+            <main id="content-display" class="w-full">
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-slate-200/80 min-h-[70vh]">
+                    <!-- O conteúdo selecionado aparecerá aqui -->
+                </section>
+            </main>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="text-center mt-14 text-slate-500 text-sm">
+            <p>&copy; 2024 Guia de Outorga. Conteúdo meramente informativo.</p>
+            <p>Verifique sempre as informações nos órgãos oficiais.</p>
+        </footer>
+    </div>
+
+    <script>
+        // --- INÍCIO DA ÁREA DE DADOS ---
+        const outorgaData = {
+            'inicio': {
+                title: 'Descomplicando a Outorga de Uso da Água',
+                subtitle: 'Entenda por que este documento é obrigatório e essencial para sua propriedade.',
+                content: `
+                    <h3>O que é a Outorga de Água?</h3>
+                    <p>De forma simples, a outorga é a <strong>licença obrigatória</strong> que o governo concede para que você, produtor rural, possa usar a água de um rio, córrego, lago ou poço para a sua atividade (como irrigação, criação de animais, etc.). Ela não te dá a posse da água, mas garante o seu direito de usá-la de forma regularizada, por um prazo definido.</p>
+                    
+                    <h3>Por que ela é importante e obrigatória?</h3>
+                    <p>A outorga é o principal instrumento para organizar o uso da água, garantindo que o recurso seja distribuído de forma justa entre todos os usuários e que não falte água para o abastecimento humano e para a natureza. Além de ser uma exigência legal, a outorga é frequentemente necessária para obter financiamentos bancários e licenciamentos ambientais.</p>
+                    
+                    <p class="mt-6 font-semibold text-sky-700">Para começar, selecione seu estado na lista ao lado e veja o passo a passo para se regularizar.</p>
+                `
+            },
+            'faq': {
+                title: 'Dúvidas Frequentes (FAQ)',
+                subtitle: 'As perguntas mais comuns sobre outorga de água.',
+                content: `
+                    <details>
+                        <summary>Preciso de outorga para um poço artesiano no meu sítio?</summary>
+                        <p class="mt-2">Depende do uso e da legislação do seu estado. Usos pequenos, como para beber e cozinhar (chamados de "usos insignificantes"), geralmente são dispensados de outorga, mas podem exigir um cadastro. Se o uso for para irrigação ou para uma atividade comercial, a chance de precisar de outorga é muito alta. Consulte sempre o órgão ambiental do seu estado.</p>
+                    </details>
+                    <details>
+                        <summary>O que acontece se eu usar a água sem outorga?</summary>
+                        <p class="mt-2">Utilizar recursos hídricos sem a devida autorização é uma infração à lei e pode resultar em penalidades como advertências, multas (que podem ser bem altas), embargo da atividade e até mesmo a perfuração e lacre de poços. Regularizar a situação é sempre o melhor caminho.</p>
+                    </details>
+                    <details>
+                        <summary>A outorga é paga?</summary>
+                        <p class="mt-2">A outorga em si (o ato de autorizar) geralmente não é paga, mas o processo pode ter custos com taxas administrativas e, principalmente, com a contratação de um profissional (como um engenheiro) para elaborar os estudos técnicos necessários. Além disso, em algumas bacias hidrográficas com sistemas de cobrança implementados, o usuário paga pelo volume de água que consome.</p>
+                    </details>
+                    <details>
+                        <summary>A outorga tem validade?</summary>
+                        <p class="mt-2">Sim. A outorga é concedida por um prazo determinado, que pode variar bastante dependendo do estado e da finalidade do uso, mas não pode exceder 35 anos. Ao final do prazo, ela pode ser renovada, se o usuário ainda precisar e se houver disponibilidade de água.</p>
+                    </details>
+                    <details>
+                        <summary>Qual a diferença entre outorga federal e estadual?</summary>
+                        <p class="mt-2">A regra é simples: se o rio, lago ou aquífero estiver inteiramente dentro de um estado, a outorga é estadual, emitida pelo órgão ambiental daquele estado. Se o corpo d'água atravessa mais de um estado ou faz fronteira com outro país (como os rios São Francisco ou Paraná), ele é de domínio da União, e a outorga deve ser solicitada à Agência Nacional de Águas e Saneamento Básico (ANA).</p>
+                    </details>
+                `
+            },
+            'União': {
+                title: 'Federal (Rios da União)',
+                subtitle: 'Agência Nacional de Águas e Saneamento Básico (ANA)',
+                site: 'https://www.gov.br/ana/pt-br',
+                passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar o Portal do Usuário de Recursos Hídricos e cadastrar-se no Sistema Federal de Regulação de Uso (REGLA).</li><li>Preencher o formulário eletrônico com dados do requerente, localização, finalidade e detalhes técnicos da interferência.</li><li>Anexar documentos específicos, se solicitado (ex: registro da ANEEL para hidrelétricas).</li><li>Acompanhar o andamento do processo e atender a eventuais pendências pelo portal.</li></ol>`,
+                documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Dados Pessoais/Empresariais (preenchidos no sistema).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Coordenadas geográficas precisas do ponto de uso da água.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Informações detalhadas sobre a finalidade, vazão e regime de operação.</span></li></ul>`
+            },
+            'SP': {
+                title: 'São Paulo (SP)',
+                subtitle: 'Departamento de Águas e Energia Elétrica (DAEE)',
+                site: 'http://www.daee.sp.gov.br/',
+                passos: `<ol class="list-decimal list-inside space-y-2"><li>Contratar um profissional habilitado para elaborar o projeto técnico.</li><li>Submeter a documentação através do Sistema de Outorga Eletrônica (SOE).</li><li>Aguardar a análise técnica do DAEE, que pode solicitar complementações.</li><li>Após a aprovação, a portaria de outorga é publicada no Diário Oficial do Estado.</li></ol>`,
+                documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento de Outorga preenchido.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia do CPF/CNPJ do requerente.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia da matrícula do imóvel ou documento de posse.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Estudos de viabilidade técnica e projetos.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>ART (Anotação de Responsabilidade Técnica) do profissional.</span></li></ul>`
+            },
+            'AC': { title: 'Acre (AC)', subtitle: 'Instituto de Meio Ambiente do Acre (IMAC)', site: 'http://www.imac.ac.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Apresentar os formulários e documentos em papel diretamente no IMAC.</li><li>Aguardar a análise técnica. O processo é predominantemente físico.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento padrão do IMAC.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia do RG, CPF e/ou contrato de arrendamento.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de inscrição no Cadastro Ambiental Rural (CAR).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Coordenadas georreferenciadas dos pontos de interferência.</span></li></ul>` },
+            'AL': { title: 'Alagoas (AL)', subtitle: 'Secretaria de Estado do Meio Ambiente e dos Recursos Hídricos (SEMARH)', site: 'http://www.semarh.al.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Obter formulários e checklist no site da SEMARH.</li><li>Apresentar a documentação completa junto com o comprovante de pagamento da taxa.</li><li>Acompanhar o processo pelo Sistema de Informações de Recursos Hídricos de Alagoas (SIRH).</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de requerimento específico.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação listada no checklist oficial.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de pagamento da taxa de análise.</span></li></ul>` },
+            'AP': { title: 'Amapá (AP)', subtitle: 'Secretaria de Estado do Meio Ambiente (SEMA)', site: 'http://www.sema.ap.gov.br', passos: `<p>Os procedimentos detalhados para o Amapá não foram especificados. Recomenda-se o contato direto com a SEMA.</p>`, documentos: `<p>A lista de documentos deve ser obtida diretamente no site oficial do órgão gestor.</p>` },
+            'AM': { title: 'Amazonas (AM)', subtitle: 'Instituto de Proteção Ambiental do Estado do Amazonas (IPAAM)', site: 'http://www.ipaam.am.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Identificar a modalidade de uso no site do IPAAM.</li><li>Baixar e preencher os formulários e Termos de Referência (TR) correspondentes.</li><li>Protocolar a solicitação diretamente no IPAAM com toda a documentação.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de Solicitação específico para o uso (água subterrânea, superficial, efluentes, etc.).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário para registro no CNARH.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Estudos técnicos conforme o Termo de Referência (Ex: Testes de Bombeamento).</span></li></ul>` },
+            'BA': { title: 'Bahia (BA)', subtitle: 'Instituto do Meio Ambiente e Recursos Hídricos (INEMA)', site: 'http://www.inema.ba.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar o Sistema Estadual de Informações Ambientais e de Recursos Hídricos (SEIA).</li><li>Preencher os formulários online.</li><li>Caso o sistema esteja instável, o atendimento deve ser feito presencialmente em uma unidade do INEMA.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento de Outorga.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulários de caracterização do uso da água.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Termo de compromisso para dispensa (se aplicável).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Declaração de Conformidade de Poço (se aplicável).</span></li></ul>` },
+            'CE': { title: 'Ceará (CE)', subtitle: 'Companhia de Gestão dos Recursos Hídricos (COGERH)', site: 'http://www.cogerh.com.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar a plataforma digital "Outorga Online".</li><li>Preencher o formulário específico (anexo) para a sua finalidade de uso.</li><li>Submeter a solicitação e aguardar a análise.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário (Anexo) correspondente ao uso (Abastecimento, Irrigação, Indústria, etc.).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentos pessoais ou da empresa.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de pagamento de emolumentos (se não for isento).</span></li></ul>` },
+            'DF': { title: 'Distrito Federal (DF)', subtitle: 'Agência Reguladora de Águas, Energia e Saneamento Básico (ADASA)', site: 'http://www.adasa.df.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Solicitar a outorga prévia antes de qualquer obra (perfuração de poço, etc.).</li><li>Realizar o pedido via Sistema de Requerimento Eletrônico, e-mail ou presencialmente.</li><li>Apresentar o formulário de requerimento adequado para o tipo de captação.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de requerimento preenchido.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentos pessoais ou da empresa.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação comprobatória em casos de transferência de titularidade.</span></li></ul>` },
+            'ES': { title: 'Espírito Santo (ES)', subtitle: 'Agência Estadual de Recursos Hídricos (AGERH)', site: 'http://www.agerh.es.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Formalizar o processo diretamente na AGERH.</li><li>Apresentar todos os formulários e documentos obrigatórios.</li><li>Aguardar análise, que pode solicitar documentos técnicos adicionais.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de requerimento específico (outorga, renovação, etc.).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulários técnicos de uso e finalidade da água.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia de documentos pessoais (CPF/RG) ou empresariais (CNPJ).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Procuração e documentos do representante (se aplicável).</span></li></ul>` },
+            'GO': { title: 'Goiás (GO)', subtitle: 'Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável (SEMAD)', site: 'http://www.meioambiente.go.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Cadastrar-se no sistema online Ipê (weboutorga).</li><li>Registrar o uso no Cadastro Estadual (CEURH) para gerar a Declaração de Uso (DURH).</li><li>Após validação da DURH pela SEMAD, iniciar o processo de outorga no sistema.</li><li>Anexar a documentação digital exigida pela plataforma.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cadastro de usuário (pessoa física/jurídica) no sistema.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Declaração de Uso de Recursos Hídricos (DURH) validada.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação técnica e legal solicitada pelo sistema.</span></li></ul>` },
+            'MA': { title: 'Maranhão (MA)', subtitle: 'Secretaria de Estado de Meio Ambiente e Recursos Naturais (SEMA)', site: 'http://www.sema.ma.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Cadastrar-se no Sistema Integrado de Gerenciamento (SIGLA).</li><li>Iniciar o processo de outorga, que é gratuito.</li><li>Anexar a documentação conforme o checklist da Portaria SEMA nº 069/2020.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação Geral (Anexo I da Portaria).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de Características do Empreendimento (Anexo III).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Estudo Hidrológico (águas superficiais) ou Hidrogeológico (subterrâneas).</span></li></ul>` },
+            'MT': { title: 'Mato Grosso (MT)', subtitle: 'Secretaria de Estado do Meio Ambiente (SEMA)', site: 'http://www.sema.mt.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Consultar o site da SEMA-MT para encontrar o Termo de Referência Padrão para a sua atividade.</li><li>Caso não exista, solicitar orientações específicas à SEMA.</li><li>Preparar e submeter a documentação conforme as diretrizes.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulários e estudos técnicos conforme o Termo de Referência aplicável.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentos pessoais ou da empresa.</span></li></ul>` },
+            'MS': { title: 'Mato Grosso do Sul (MS)', subtitle: 'Instituto do Meio Ambiente de Mato Grosso do Sul (IMASUL)', site: 'http://www.imasul.ms.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Registrar a declaração de uso no Cadastro Estadual (CEURH) via sistema Siriema.</li><li>Seguir as normas do Decreto nº 13.990/2014 e da Resolução SEMAGRO nº 774/2022.</li><li>Consultar o Manual de Outorga disponível no site do IMASUL para mais detalhes.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Declaração de uso registrada no sistema Siriema.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação técnica e legal conforme a legislação e o Manual de Outorga.</span></li></ul>` },
+            'MG': { title: 'Minas Gerais (MG)', subtitle: 'Instituto Mineiro de Gestão das Águas (IGAM)', site: 'http://www.igam.mg.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Realizar o cadastro de pessoa física ou jurídica no Portal Ecossistemas.</li><li>Utilizar o Sistema de Outorga (SOUT) para solicitar a outorga.</li><li>Seguir as orientações dos manuais específicos para cada tipo de solicitação (perfuração de poço, outorga, dispensa).</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cadastro ativo no Portal Ecossistemas.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Preenchimento completo da solicitação no sistema SOUT.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentos técnicos e legais conforme os manuais do IGAM.</span></li></ul>` },
+            'PA': { title: 'Pará (PA)', subtitle: 'Secretaria de Estado de Meio Ambiente e Sustentabilidade (SEMAS)', site: 'http://www.semas.pa.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li><strong>(Pré-requisito)</strong> Cadastrar o uso pretendido no sistema federal REGLA (da ANA).</li><li>Acessar o Sistema de Gerenciamento de Recursos Hídricos (Sigerh-PA) através do Portal de Atos Autorizativos da SEMAS.</li><li>Submeter o pedido com a documentação exigida.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de cadastro no REGLA.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulários específicos da SEMAS (A, B, C, D) para cada modalidade.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Estudos técnicos conforme os Termos de Referência.</span></li></ul>` },
+            'PB': { title: 'Paraíba (PB)', subtitle: 'Agência Executiva de Gestão das Águas do Estado da Paraíba (AESA)', site: 'http://www.aesa.pb.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar o sistema de outorgas online da AESA.</li><li>Realizar o cadastro de usuário na plataforma.</li><li>Preencher o formulário online e anexar a documentação solicitada em formato digital.</li><li>Acompanhar o andamento do processo pelo sistema.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento de Outorga de Água.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Projeto técnico com ART.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Mapa de localização do empreendimento.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia da escritura ou documento de posse do imóvel.</span></li></ul>` },
+            'PR': { title: 'Paraná (PR)', subtitle: 'Instituto Água e Terra (IAT)', site: 'http://www.iat.pr.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar o Sistema de Informações para a Gestão Ambiental e de Recursos Hídricos (SIGARH).</li><li>Realizar a solicitação online, que pode ser para anuência prévia de perfuração ou outorga.</li><li>Aguardar a emissão da Portaria de outorga ou da Declaração de Uso (DUIO) antes de iniciar o uso da água.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cadastro no sistema SIGARH.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentos pessoais ou da empresa.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação técnica pertinente ao pedido.</span></li></ul>` },
+            'PE': { title: 'Pernambuco (PE)', subtitle: 'Agência Pernambucana de Águas e Clima (APAC)', site: 'http://www.apac.pe.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Dirigir a solicitação de outorga (captação, uso ou lançamento) à APAC.</li><li>Lembrar que a outorga é pré-requisito para a licença ambiental da CPRH.</li><li>Apresentar os estudos técnicos exigidos pela legislação.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento formal à APAC.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Para captação em nascentes: resultado do teste de vazão com ART, realizado em período de estiagem.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Outros documentos técnicos conforme a modalidade.</span></li></ul>` },
+            'PI': { title: 'Piauí (PI)', subtitle: 'Secretaria de Meio Ambiente e Recursos Naturais (SEMAR)', site: 'http://www.semar.pi.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Gerar o requerimento em PDF no portal aguas.semarh.pi.gov.br.</li><li>Submeter o requerimento e a documentação no Sistema Integrado de Gerenciamento Ambiental (SIGA).</li><li>Utilizar o "Roteiro de Orientações" do portal para obter a lista de documentos.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento em PDF gerado no portal da SEMARH.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação conforme o Roteiro de Orientações para o seu tipo de solicitação.</span></li></ul>` },
+            'RJ': { title: 'Rio de Janeiro (RJ)', subtitle: 'Instituto Estadual do Ambiente (INEA)', site: 'http://www.inea.rj.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li><strong>(Pré-requisito)</strong> Cadastrar o uso no sistema federal REGLA (da ANA).</li><li>Após o cadastro federal, continuar o processo junto ao INEA.</li><li>A outorga é concedida pela Diretoria de Licenciamento Ambiental (Dilam).</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de cadastro no REGLA.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação exigida pelo INEA conforme a Resolução CERHI-RJ nº 221/2020.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Para renovação: declaração de adimplência do usuário.</span></li></ul>` },
+            'RN': { title: 'Rio Grande do Norte (RN)', subtitle: 'Instituto de Gestão das Águas do Estado do Rio Grande do Norte (IGARN)', site: 'http://www.igarn.rn.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li><strong>(Pré-requisito)</strong> Cadastrar o uso no sistema federal REGLA (da ANA).</li><li>Formalizar o pedido junto ao IGARN com a documentação completa.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de preenchimento do cadastro no CNARH/REGLA.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de Requerimento de Outorga (modelo IGARN).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia de documentos pessoais ou empresariais.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cópia do Título de propriedade ou prova de posse da terra.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Para poços: Teste de bombeamento com ART e licença de obra hidráulica.</span></li></ul>` },
+            'RS': { title: 'Rio Grande do Sul (RS)', subtitle: 'Secretaria do Ambiente e Infraestrutura (SEMA)', site: 'http://www.sema.rs.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar o Sistema de Outorga de Água do Rio Grande do Sul (SIOUT RS).</li><li>Realizar o cadastro de usuário (pessoa física ou jurídica).</li><li>Iniciar a solicitação com o "Cadastro de Uso da Água", anexando os documentos comprobatórios.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Cadastro de Uso da Água preenchido no SIOUT RS.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentos comprobatórios da relação com o imóvel (CAR, contratos, etc.).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação técnica exigida pelo sistema.</span></li></ul>` },
+            'RO': { title: 'Rondônia (RO)', subtitle: 'Secretaria de Estado do Desenvolvimento Ambiental (SEDAM)', site: 'http://www.sedam.ro.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Baixar os formulários, termos de referência e modelos no site da SEDAM.</li><li>Preencher e apresentar a documentação fisicamente na Coordenadoria de Recursos Hídricos (COREH).</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Requerimento padrão (para outorga ou dispensa).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Termo de Referência para Relatório de Avaliação do Uso de Recursos Hídricos.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Formulário de Finalidade de Uso específico para a atividade.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Modelos de projeto de poço e teste de bombeamento (se aplicável).</span></li></ul>` },
+            'RR': { title: 'Roraima (RR)', subtitle: 'Fundação Estadual do Meio Ambiente e Recursos Hídricos (FEMARH)', site: 'http://www.femarh.rr.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Realizar o cadastro do uso no CNARH/ANA.</li><li>Apresentar o pedido de outorga na Divisão de Outorga da FEMARH.</li><li>Aguardar a análise e emissão da portaria.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de cadastro no CNARH.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação específica a ser consultada diretamente na FEMARH.</span></li></ul>` },
+            'SC': { title: 'Santa Catarina (SC)', subtitle: 'Secretaria de Meio Ambiente e Economia Verde (SEMAE)', site: 'http://www.semae.sc.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li>Acessar o Sistema de Outorgas de Águas de Santa Catarina (SIOUT SC).</li><li>Realizar o cadastro do uso no sistema, que é autodeclaratório para algumas modalidades.</li><li>Anexar a documentação geral exigida.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Número do Cadastro Estadual de Usuários de Recursos Hídricos (CEURH).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Identificação do requerente (CPF ou CNPJ).</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Certidão da Prefeitura sobre conformidade com o uso e ocupação do solo.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Licença ambiental, quando exigida.</span></li></ul>` },
+            'SE': { title: 'Sergipe (SE)', subtitle: 'Secretaria de Estado do Meio Ambiente, Sustentabilidade e Ações Climáticas (SEMAC)', site: 'http://www.semac.se.gov.br', passos: `<p>O processo é regulamentado pela Lei Estadual nº 3.870/1997. Recomenda-se o contato direto com a SEMAC para obter os procedimentos e formulários atuais.</p>`, documentos: `<p>A lista de documentos deve ser obtida diretamente no site oficial do órgão gestor.</p>` },
+            'TO': { title: 'Tocantins (TO)', subtitle: 'Instituto Natureza do Tocantins (NATURATINS)', site: 'http://www.naturatins.to.gov.br', passos: `<ol class="list-decimal list-inside space-y-2"><li><strong>(Pré-requisito)</strong> Cadastrar o uso no sistema federal REGLA (da ANA).</li><li>Apresentar o pedido ao NATURATINS, que analisará a solicitação com base na disponibilidade hídrica e nos Planos de Recursos Hídricos.</li><li>Cumprir as exigências do NATURATINS, que podem incluir a instalação de equipamentos de monitoramento.</li></ol>`, documentos: `<ul class="checklist"><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Comprovante de cadastro no REGLA.</span></li><li><svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg><span>Documentação técnica e legal conforme as normas do NATURATINS.</span></li></ul>` }
+        };
+
+        const articlesData = [
+            {
+                id: 1,
+                title: '5 Erros Comuns ao Solicitar a Outorga de Água e Como Evitá-los',
+                summary: 'Evitar falhas no processo de solicitação de outorga pode economizar tempo e dinheiro. Conheça os erros mais comuns, desde a documentação incompleta até a escolha errada do profissional, e aprenda a garantir que seu processo corra sem problemas.',
+                content: '<h3>Introdução</h3><p>Solicitar a outorga de uso da água é um passo crucial, mas o caminho pode ter armadilhas. Este artigo detalha os 5 erros mais frequentes que produtores rurais cometem e oferece dicas práticas para evitá-los, garantindo um processo mais rápido e sem surpresas.</p><h3>1. Documentação Incompleta ou Incorreta</h3><p>É o erro mais comum. A falta de um único documento ou o preenchimento incorreto de um formulário pode paralisar o processo por meses. A solução é simples: antes de iniciar, obtenha o checklist oficial mais recente no site do órgão gestor e confira cada item duas vezes.</p><h3>2. Desconhecer a Dominialidade da Água</h3><p>Pedir a outorga ao órgão errado (federal em vez de estadual, ou vice-versa) resulta na perda total do tempo e do trabalho. Sempre confirme se o rio ou poço está em terras da União ou do seu estado antes de qualquer outra coisa.</p><h3>3. Contratar um Profissional Inexperiente</h3><p>O estudo técnico é o coração do pedido de outorga. Contratar um profissional que não tem experiência na área pode resultar em um projeto mal elaborado, que será certamente questionado ou negado pelo órgão analista. Busque referências e contrate engenheiros ou geólogos com experiência comprovada em recursos hídricos.</p><h3>4. Ignorar a Outorga Prévia</h3><p>Muitos produtores perfuram o poço ou constroem a barragem para depois pedir a licença. Em muitos estados, é obrigatório solicitar uma "outorga prévia" ou "anuência prévia" antes de qualquer obra. Fazer a obra sem essa autorização é uma irregularidade e pode gerar multas.</p><h3>5. Perder o Prazo de Renovação</h3><p>A outorga tem validade. Perder o prazo para solicitar a renovação pode resultar na perda do direito de uso da água, especialmente em áreas com muitos usuários. Marque na agenda: a renovação deve ser solicitada com, no mínimo, 90 a 180 dias de antecedência do vencimento.</p>'
+            },
+            {
+                id: 2,
+                title: 'Uso Insignificante de Água: Você Realmente Precisa de Outorga?',
+                summary: 'Muitos usuários, especialmente pequenos produtores rurais, podem se enquadrar na categoria de "uso insignificante". Entenda o que isso significa, quais são os limites em diferentes estados e como fazer o cadastro obrigatório para ficar em dia com a lei.',
+                content: '<p>Conteúdo completo do artigo 2... Lembre-se que mesmo usos insignificantes precisam de cadastro!</p>'
+            },
+            {
+                id: 3,
+                title: 'A Importância da Medição (Hidrometria) para a Renovação da sua Outorga',
+                summary: 'A instalação de hidrômetros e o envio de dados de consumo são cada vez mais exigidos pelos órgãos gestores. Saiba por que a medição precisa é fundamental não apenas para a gestão das águas, mas também para facilitar a renovação da sua licença de uso.',
+                content: '<p>Conteúdo completo do artigo 3... A medição correta é a chave para uma gestão sustentável.</p>'
+            }
+        ];
+        // --- FIM DA ÁREA DE DADOS ---
+
+        // Elementos da página
+        const sidebar = document.getElementById('sidebar');
+        const contentDisplay = document.querySelector('#content-display section');
+        const listaEstadosEl = document.getElementById('lista-estados');
+        const searchBarEl = document.getElementById('search-bar');
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const breadcrumbPathEl = document.getElementById('breadcrumb-path');
+
+        function updateBreadcrumb(path) {
+            breadcrumbPathEl.innerHTML = path;
+        }
+
+        function renderContent(data) {
+            // Estrutura base do conteúdo
+            let contentHtml = `
+                <h2 class="text-2xl font-bold text-slate-800 mb-2">${data.title}</h2>
+                <p class="text-md text-slate-500 mb-6">${data.subtitle || ''}</p>
+            `;
+
+            // Se for um estado, adiciona as seções específicas
+            if (data.passos && data.documentos) {
+                contentHtml += `
+                    <div class="prose max-w-none prose-slate">
+                        <h4><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>Passo a Passo para Solicitação</h4>
+                        ${data.passos}
+
+                        <h4><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>Checklist de Documentos</h4>
+                        ${data.documentos}
+                    </div>
+
+                    <div class="mt-8 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-r-lg">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-semibold text-blue-800">Quando a Outorga NÃO é Necessária? (Usos Insignificantes)</h3>
+                                <div class="mt-2 text-sm text-blue-700">
+                                    <p>Usos de água considerados "insignificantes", como para satisfazer as necessidades básicas de uma família ou de um pequeno grupo de animais, geralmente são dispensados de outorga. No entanto, os limites de vazão variam muito de estado para estado. É <strong>obrigatório</strong> verificar a legislação local, pois mesmo os usos insignificantes podem exigir um cadastro no órgão ambiental.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <svg class="h-5 w-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.21 3.03-1.742 3.03H4.42c-1.532 0-2.492-1.696-1.742-3.03l5.58-9.92zM10 13a1 1 0 110-2 1 1 0 010 2zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-semibold text-yellow-800">Atenção: Riscos de Operar Sem Outorga</h3>
+                                <div class="mt-2 text-sm text-yellow-700">
+                                    <p>Utilizar água sem a licença é uma infração grave. As consequências incluem multas pesadas, embargo da sua atividade, lacre de poços e bombas, além de impedir o acesso a crédito rural e licenciamentos ambientais. A regularização é um investimento na segurança jurídica e na sustentabilidade da sua propriedade.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Para 'inicio', 'faq'
+                contentHtml += `<div class="prose max-w-none prose-slate">${data.content}</div>`;
+            }
+
+            // Adiciona o botão de site oficial, se houver
+            if (data.site && data.site !== '#') {
+                contentHtml += `
+                <div class="mt-8 pt-6 border-t border-slate-200">
+                    <a href="${data.site}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-100 text-slate-700 font-semibold py-2 px-4 rounded-lg hover:bg-slate-200 transition-colors border border-slate-300">
+                        Visitar Site Oficial
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+                `;
+            }
+
+            contentDisplay.innerHTML = contentHtml;
+        }
+        
+        function renderArticles() {
+            let articlesHtml = articlesData.map(article => `
+                <article class="mb-6 pb-6 border-b border-slate-200 last:border-b-0">
+                    <h3 class="text-xl font-semibold text-sky-700 hover:text-sky-600">${article.title}</h3>
+                    <p class="mt-2">${article.summary}</p>
+                    <button onclick="showArticleDetail(${article.id})" class="text-sky-600 font-semibold mt-3 inline-block hover:underline">Ler mais &rarr;</button>
+                </article>
+            `).join('');
+
+            contentDisplay.innerHTML = `
+                <h2 class="text-2xl font-bold text-slate-800 mb-6">Artigos e Notícias</h2>
+                ${articlesHtml}
+            `;
+        }
+
+        function showArticleDetail(id) {
+            const article = articlesData.find(art => art.id === id);
+            if (!article) return;
+
+            sidebar.style.display = 'none';
+            contentDisplay.parentElement.className = 'w-full';
+
+            const articleHtml = `
+                <article class="prose max-w-none prose-slate">
+                    <button onclick="showView('artigos')" aria-label="Voltar para a lista de artigos" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-sky-600 hover:underline">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" /></svg>
+                        Voltar para Artigos
+                    </button>
+                    <h2 class="!mt-2">${article.title}</h2>
+                    <div>${article.content}</div>
+                </article>
+            `;
+            contentDisplay.innerHTML = articleHtml;
+            updateBreadcrumb(`Artigos <span class="text-slate-400 mx-1">/</span> ${article.title}`);
+            // Note: We don't call setActiveNav here to keep 'Artigos' highlighted.
+        }
+
+        function setActiveNav(activeId) {
+            navButtons.forEach(btn => {
+                btn.classList.remove('nav-btn-active', 'hover:bg-slate-200');
+                btn.classList.add('hover:bg-slate-200');
+            });
+            const activeButton = document.getElementById(activeId);
+            activeButton.classList.add('nav-btn-active');
+            activeButton.classList.remove('hover:bg-slate-200');
+        }
+
+        function showView(viewName) {
+            if (viewName === 'inicio') {
+                sidebar.style.display = 'block';
+                contentDisplay.parentElement.className = 'w-full md:w-2/3 lg:w-3/4';
+                renderContent(outorgaData.inicio);
+                setActiveNav('nav-inicio');
+                updateBreadcrumb('Início');
+            } else {
+                sidebar.style.display = 'none';
+                contentDisplay.parentElement.className = 'w-full';
+                if (viewName === 'faq') {
+                    renderContent(outorgaData.faq);
+                    setActiveNav('nav-faq');
+                    updateBreadcrumb('Dúvidas Frequentes');
+                } else if (viewName === 'artigos') {
+                    renderArticles();
+                    setActiveNav('nav-artigos');
+                    updateBreadcrumb('Artigos');
+                }
+            }
+        }
+
+        function popularLista() {
+            const itemUniao = document.createElement('li');
+            itemUniao.dataset.sigla = 'União';
+            itemUniao.className = 'p-2.5 rounded-lg cursor-pointer hover:bg-slate-100 transition-colors';
+            itemUniao.textContent = 'União (Federal)';
+            listaEstadosEl.appendChild(itemUniao);
+
+            const siglas = Object.keys(outorgaData).filter(key => !['inicio', 'faq'].includes(key) && key !== 'União').sort();
+            siglas.forEach(sigla => {
+                const item = document.createElement('li');
+                item.dataset.sigla = sigla;
+                item.className = 'p-2.5 rounded-lg cursor-pointer hover:bg-slate-100 transition-colors';
+                item.textContent = `${outorgaData[sigla].title}`;
+                listaEstadosEl.appendChild(item);
+            });
+        }
+
+        // --- INICIALIZAÇÃO E EVENTOS ---
+        document.addEventListener('DOMContentLoaded', () => {
+            popularLista();
+            showView('inicio');
+
+            // Eventos de Navegação
+            document.getElementById('nav-inicio').addEventListener('click', () => showView('inicio'));
+            document.getElementById('nav-faq').addEventListener('click', () => showView('faq'));
+            document.getElementById('nav-artigos').addEventListener('click', () => showView('artigos'));
+            document.getElementById('home-btn-header').addEventListener('click', () => showView('inicio'));
+
+            // Evento da lista de estados
+            listaEstadosEl.addEventListener('click', (e) => {
+                const listItem = e.target.closest('li');
+                if (listItem) {
+                    const sigla = listItem.dataset.sigla;
+                    renderContent(outorgaData[sigla]);
+                    updateBreadcrumb(`Estados <span class="text-slate-400 mx-1">/</span> ${outorgaData[sigla].title}`);
+                    
+                    document.querySelectorAll('#lista-estados li').forEach(item => item.classList.remove('active-state'));
+                    listItem.classList.add('active-state');
+                }
+            });
+
+            // Evento da barra de busca
+            searchBarEl.addEventListener('input', (e) => {
+                const filter = e.target.value.toLowerCase();
+                document.querySelectorAll('#lista-estados li').forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    item.style.display = text.includes(filter) ? '' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
